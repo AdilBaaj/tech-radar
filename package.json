@@ -13,9 +13,14 @@
     "htmllint": "^0.7.2"
   },
   "scripts": {
-    "start": "noded app.js",
+    "start": "node src/app.js",
     "lint": "npm run lint:js && npm run lint:html",
     "lint:js": "eslint docs/*.js",
     "lint:html": "htmllint docs/*.html"
+  },
+  "type": "module",
+  "dependencies": {
+    "express": "^4.17.2",
+    "node-fetch": "^3.1.0"
   }
 }

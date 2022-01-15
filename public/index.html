@@ -16,7 +16,7 @@
 <svg id="radar"></svg>
 
 <script>
-    fetch("https://tech-radar-5e989-default-rtdb.europe-west1.firebasedatabase.app/data.json")
+    fetch('/getData')
         .then(response => response.json())
         .then(data => radar_visualization({
             svg_id: "radar",
@@ -29,10 +29,10 @@
             },
             title: "Nimbleways Tech Radar — 2022.01-alpha",
             quadrants: [
-                { name: "Languages" },
-                { name: "Quality tools and utils" },
-                { name: "Datastores" },
-                { name: "Frameworks" },
+                { name: "Data" },
+                { name: "Devops" },
+                { name: "Frontend" },
+                { name: "Backend" },
             ],
             rings: [
                 { name: "ADOPT", color: "#93c47d" },
